@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="andres ortiz">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/pyc.ico" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <title>Reservaciones</title>
+</head>
+<body>
+    <!--menu principal navegable  -->
+    <header>
+        <img src="../assets/pyc.png" alt="">
+        <nav>
+            <ul>
+                <li class="li-nav">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="li-nav">
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="li-nav">
+                    <a href="./menu.html">Menu</a>
+                </li>
+                <li class="li-nav">
+                    <a href="./otrosproductos.html">Otros productos</a>
+                </li>
+                <li class="li-nav">
+                    <a href="#">Reservaciones</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sect-form">
+            <img src="https://placehold.co/800x600" alt="">
+            <h1>Reserva tu mesa</h1>
+            <form action="/submit" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tomas" required>
+                
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            
+                <label for="personas">N° de personas:</label>
+                <input type="number" id="personas" name="personas" min="1" max="12" required>
+            
+                <label for="aclaracion">Deje alguna aclaracion en caso de ser necesaria</label>
+                <textarea name="aclaracion" id="aclaraacion"></textarea>
+            
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+    </main>
+    
+    
+      <footer>
+        <section class="sect-footer">
+            <h2>Contactanos</h2>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="../assets/instagram.svg" alt="">
+            </a>
+            <a href="mailto:ortizandres135@gmail.com">
+                <img src="../assets/email.png" alt="">
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="../assets/whatsapp.svg" alt="">
+            </a>
+            <p>
+                &copy;PuntoyComa
+            </p>
+        </section>
+    </footer>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva de Mesa - Restaurante PYC</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="contenedor">
+    
+  </div>
+</body>
+</html>

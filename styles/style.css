@@ -1,0 +1,208 @@
+/* colores */
+
+/*
+    #2C2C2C
+    #09122C
+    #EAEAEA
+*/
+
+/* fuentes / font-family: "Raleway", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+
+body{
+    font-family: "Raleway", sans-serif;
+    background-color: #EAEAEA;
+}
+
+
+/* header */
+
+header{
+    background-color: #2C2C2C;
+    padding: 8px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar img{
+    width: 64px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}
+.li-nav{
+    list-style-type: none;
+}
+.li-nav a{
+    color: #EAEAEA;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 16px;
+}
+
+
+/* footer */
+
+.sect-footer{
+    background-color: #09122C;
+}
+.sect-footer h2{
+    color: #EAEAEA;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 20px;
+}
+.sect-footer p{
+    color: #EAEAEA;
+}
+
+/* regla general para h2 */
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+/* ---------------------------------index */
+
+/* seccion banner */
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-image: url(../assets/bannerindex.png);
+    background-size: cover;
+    background-position: center center;
+    color: #EAEAEA;
+    padding: 112px;
+    margin: 0.5px;
+}
+.banner h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+.banner p{
+    text-align: center;
+}
+
+/* seccion texto */
+.texto-index{
+    background-color:#2C2C2C;
+    color: #EAEAEA;
+}
+
+/* seccion servicios */
+
+.div-serv{
+    background-color: #09122C;
+    color: #EAEAEA;
+}
+.div-serv h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* seccion destacados */
+.div-dest{
+    background-color: #2C2C2C;
+    color: #EAEAEA;
+}
+
+
+
+/*------------------------------------ nosotros */
+
+/* seccion banner-nos */
+.div-ban-nos{
+    background-color: #09122C;
+    color: #EAEAEA;
+}
+.div-ban-nos h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline
+}
+
+
+/* ------------------------------------menu */
+
+/* banner menu */
+.banner-menu p{
+    text-transform:uppercase;
+    text-align: center;
+}
+.banner-menu h1{
+    text-decoration: underline;
+    text-align: center;
+}
+/* carta navegable */
+.carta-nav{
+    background-color: #2C2C2C;
+}
+/* pasta */
+.carta{
+    background-color: #2C2C2C;
+    color: #EAEAEA;
+}
+.art-pastas{
+    background-image: url(../assets/pastas.jpeg);
+}
+/* carne */
+.art-carne{
+    background-image: url(../assets/carnes.jpeg);
+}
+/* vetariano */
+.art-veg{
+    background-image: url(../assets/vegetales.jpeg);
+}
+/* byc */
+.art-byc{
+    background-image: url(../assets/cocteles.jpeg);
+}
+/* postres */
+.art-postres{
+    background-image: url(../assets/postres.jpeg);
+}
+/* cafes */
+.art-cafes{
+    background-image:url(../assets/cafe.jpeg);
+}
+
+
+
+/* -----------------------------otros productos */
+
+/* seccion banner op */
+.div-op{
+    background-image: url(https://placehold.co/300x600);
+}
+.div-op-tw{
+    background-color: #2C2C2C;
+    color: #EAEAEA;
+}
+/* cards */
+.div-card{
+    background-color: #09122C;
+}
+/* ------------------------------reservaciones */
+.sect-form{
+    background-color: #2C2C2C;
+    color: #EAEAEA;
+}
+
+
