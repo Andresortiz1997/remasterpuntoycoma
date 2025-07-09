@@ -1,14 +1,23 @@
 /* colores */
 
-/*
-    #2C2C2C
-    #09122C
-    #EAEAEA
+/*  pages
+    #2a9d8f
+    #264653
+    #e0e1dd
+
+    efectos
+    #1b4332
+
+    tipografia
+    #edf2f4
+    #0a0908
 */
 
-/* fuentes / font-family: "Raleway", sans-serif; */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* fuentes / font-family: "Josefin Sans", sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 /* reset */
 *{
     margin: 0;
@@ -23,7 +32,7 @@ html{
 /* body */
 
 body{
-    font-family: "Raleway", sans-serif;
+    
     background-color: #EAEAEA;
 }
 
