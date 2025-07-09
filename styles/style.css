@@ -22,6 +22,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* para que 1rem sea 10px */
@@ -29,26 +30,21 @@ html{
     font-size: 62.5%;
 }
 
-/* body */
-
-body{
-    
-    background-color: #EAEAEA;
-}
-
 
 /* header */
 
 header{
     background-color: #2a9d8f;
-    padding: 8px;
 }
 
 .img-nav{
     display: inline-block;
-    width: 160px;
+    width: 8rem;
 }
-
+.nav-link{
+    color:#edf2f4 ;
+    font-size: 2rem;
+}
 
 
 /* footer */
@@ -66,65 +62,29 @@ header{
     color: #EAEAEA;
 }
 
-/* regla general para h2 */
-h2{
-    text-align: center;
-    text-decoration: underline;
-}
+
 /* ---------------------------------index */
-
-/* seccion banner */
-.banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 400px;
-    overflow: hidden;
-    padding: 2rem;
+.sec-banner{
+    background-color: green;
 }
-
-.banner .img-fondo {
-    position: absolute;
-    top: 0;
-    left: 0;
+.img-fondo{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
 }
 
-.div-banner {
-    position: relative;
-    text-align: center;
-    color: #2C2C2C;
-    z-index: 1;
-}
-
-
-/* seccion texto */
 .texto-index{
-    background-color:#2C2C2C;
-    color: #EAEAEA;
+    background-color: red;
 }
 
-/* seccion servicios */
-
-.div-serv{
-    background-color: #09122C;
-    color: #EAEAEA;
-}
-.div-serv h3{
-    text-transform: uppercase;
-    text-align: center;
+.servicios{
+    background-color: blue;
 }
 
-/* seccion destacados */
 .div-dest{
-    background-color: #2C2C2C;
-    color: #EAEAEA;
+    background-color: yellow;
 }
-
+.div-dest img{
+    width: 100%;
+}
 
 
 /*------------------------------------ nosotros */
