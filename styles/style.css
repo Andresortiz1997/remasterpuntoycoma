@@ -31,6 +31,7 @@ html{
 }
 body{
     font-family:"Josefin Sans", sans-serif ;
+    background-color:#e0e1dd;
 }
 
 
@@ -72,19 +73,86 @@ header{
 
 
 /* ---------------------------------index */
-.sec-banner{
-    background-color: green;
+/* para h2 de index */
+.subtitulos-index{
+    text-align: center;
+    font-size: 4rem;
+    text-decoration: underline;
+    color: #2C2C2C;
 }
-.img-fondo{
+
+.sec-banner {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem;
+    text-align: center;
+    color: #09122C;
+}
+
+.img-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.div-banner {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+.div-banner h1{
+    font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
+}
+.div-banner p{
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
 }
 
 .texto-index{
-    background-color: red;
+    background-color:#09122C;
+    color:#edf2f4 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:6rem;
+    margin: 1rem 8rem;
+    border: 1px solid #2C2C2C;
+    border-radius: 0.4rem;
+}
+.texto-index p{
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 .servicios{
-    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.div-serv{
+    background-color:#2a9d8f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #e0e1dd;
+    border: #2C2C2C 1px solid;
+    margin: 2rem;
+    border-radius: 5px;
+    padding: 0.8rem 0.6rem;
 }
 
 .div-dest{
