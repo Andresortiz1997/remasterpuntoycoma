@@ -77,8 +77,9 @@ header{
 .subtitulos-index{
     text-align: center;
     font-size: 4rem;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: #2C2C2C;
+    font-weight: bold;
 }
 
 .sec-banner {
@@ -130,6 +131,7 @@ header{
     margin: 1rem 8rem;
     border: 1px solid #2C2C2C;
     border-radius: 0.4rem;
+    text-align: justify;
 }
 .texto-index p{
     font-weight: bolder;
