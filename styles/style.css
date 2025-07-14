@@ -59,7 +59,7 @@ header{
 /* footer */
 
 .sect-footer{
-    background-color: #09122C;
+    background-color:#264653;
 }
 .sect-footer h2{
     color: #EAEAEA;
@@ -73,12 +73,12 @@ header{
 
 
 /* ---------------------------------index */
+
 /* para h2 de index */
 .subtitulos-index{
     text-align: center;
     font-size: 4rem;
-    /* text-decoration: underline; */
-    color: #2C2C2C;
+    color: #0a0908;
     font-weight: bold;
 }
 
@@ -91,9 +91,8 @@ header{
     overflow: hidden;
     padding: 2rem;
     text-align: center;
-    color: #09122C;
+    color:#0a0908;
 }
-
 .img-fondo {
     position: absolute;
     top: 0;
@@ -104,7 +103,6 @@ header{
     opacity: 0.6;
     z-index: 1;
 }
-
 .div-banner {
     position: relative;
     z-index: 2;
@@ -121,49 +119,117 @@ header{
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
 }
 
+
 .texto-index{
-    background-color:#09122C;
+    background-color:#264653;
     color:#edf2f4 ;
     display: flex;
     justify-content: center;
     align-items: center;
     padding:6rem;
-    margin: 1rem 8rem;
+    margin: 0 4rem 2rem 4rem;
     border: 1px solid #2C2C2C;
     border-radius: 0.4rem;
-    text-align: justify;
+    text-align: center;
 }
 .texto-index p{
     font-weight: bolder;
     font-size: 1.5rem;
 }
 
+
 .servicios{
     display: flex;
-    justify-content: space-around;
     margin-top: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
 }
 
 .div-serv{
+    flex: 1 1 30rem;
+    max-width: 35rem;
     background-color:#2a9d8f;
+    color: #e0e1dd;
+    border:#1b4332 1px solid;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+}
+.div-serv img{
+    display:block;
+    border-radius:8px;
+    width: 150px;
+    height: auto;
+    margin:  0 auto 1rem; /*el auto me genera un efecto centrado*/
+} 
+.card-contenido{
+    max-width: 150px;
+    margin: 0 auto;
+}
+.card-title{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.card-text{
+    font-size: 1rem;
+}
+
+
+.sec-dest{
+    margin:0 auto 2rem;
+}
+.div-dest {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border: ridge 1px #1b4332;
+    border-radius: 12px;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.img-container {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dest-textos {
+    flex: 1 1 50%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.dest-textos h2 {
+    align-self: flex-start;
+    margin-bottom: 1rem;
+    color: #264653;
+}
+
+.div-dest a {
+    display: inline-block;
+    background-color: #264653;
     color: #e0e1dd;
-    border: #2C2C2C 1px solid;
-    margin: 2rem;
-    border-radius: 5px;
-    padding: 0.8rem 0.6rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border: 1px solid #1b4332;
+    border-radius: 8px;
+    margin-top: 1rem;
+    align-self: flex-start;
 }
-
-.div-dest{
-    background-color: yellow;
-}
-.div-dest img{
-    width: 100%;
-}
-
 
 /*------------------------------------ nosotros */
 
