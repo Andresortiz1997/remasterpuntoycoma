@@ -57,18 +57,40 @@ header{
 
 
 /* footer */
+footer {
+  background-color: #264653;
+  color: #e0e1dd;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: auto;
+}
 
-.sect-footer{
-    background-color:#264653;
+.sect-footer h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #e0e1dd;
 }
-.sect-footer h2{
-    color: #EAEAEA;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 20px;
+.smedia{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
 }
-.sect-footer p{
-    color: #EAEAEA;
+
+.sect-footer a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+.sect-footer img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.sect-footer p {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #e0e1dd;
 }
 
 
@@ -82,6 +104,7 @@ header{
     font-weight: bold;
 }
 
+/* seccion banner */
 .sec-banner {
     position: relative;
     height: 400px;
@@ -234,16 +257,108 @@ header{
 /*------------------------------------ nosotros */
 
 /* seccion banner-nos */
-.div-ban-nos{
-    background-color: #09122C;
-    color: #EAEAEA;
+.banner-nos {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #0a0908;
+    margin-bottom: 2rem;
 }
-.div-ban-nos h1{
-    font-size: 50px;
+.banner-nos .img-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6;
+}
+.div-ban-nos {
+    position: relative;
+    z-index: 2;
     text-align: center;
-    text-decoration: underline
+    padding: 1rem 2rem;
+    max-width: 800px;
+}
+.div-ban-nos p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
+
+}
+.div-ban-nos h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)
 }
 
+/* seccion quienes somos */
+.quienes-somos {
+    text-align: center;
+    padding: 2rem;
+}
+
+.subtitulos-index {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #264653;
+}
+
+.bloque-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.bloque-grid.reverse {
+    direction: rtl;
+}
+
+.bloque-grid.reverse > * {
+    direction: ltr;
+}
+
+.texto {
+    text-align: left;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* seccion mapa */
+.donde-estamos {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.ubicacion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.ubicacion-container p{
+    font-size: 2.4rem;
+    font-weight: bold;
+
+}
 
 /* ------------------------------------menu */
 
@@ -310,5 +425,148 @@ header{
     background-color: #2C2C2C;
     color: #EAEAEA;
 }
+
+/* -----------------------------------media querys */
+/* Media query para dispositivos móviles (hasta 480px) */
+@media (max-width: 480px) {
+    /* ------------------------index */
+  .subtitulos-index {
+    font-size: 2.5rem;
+  }
+  .div-banner h1 {
+    font-size: 2.5rem;
+  }
+  .div-banner p {
+    font-size: 1.2rem;
+  }
+  .texto-index {
+    padding: 2rem;
+    margin: 0 1rem 2rem 1rem;
+  }
+  .texto-index p {
+    font-size: 1.1rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+  .div-dest {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .img-container {
+    display: none;
+  }
+  .dest-textos {
+    align-items: center;
+    text-align: center;
+  }
+  .div-dest a {
+    align-self: center;
+  }
+  /* --------------------nosotros */
+  .banner-nos {
+    height: 50vh;
+    padding: 1rem;
+  }
+  .div-ban-nos p {
+    font-size: 1.2rem;
+  }
+  .div-ban-nos h1 {
+    font-size: 2.5rem;
+  }
+  .subtitulos-index {
+    font-size: 2.2rem;
+  }
+  .texto {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .bloque-grid {
+    grid-template-columns: 1fr;
+  }
+  .bloque-grid.reverse {
+    direction: ltr;
+  }
+  .ubicacion-container p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+/* Media query para tablets (hasta 1024px) */
+@media (min-width:480px) and (max-width: 1024px) {
+    /* -------------------------index */
+  .subtitulos-index {
+    font-size: 3rem;
+  }
+  .div-banner h1 {
+    font-size: 3rem;
+  }
+  .div-banner p {
+    font-size: 1.5rem;
+  }
+  .texto-index {
+    padding: 3rem;
+    margin: 0 2rem 2rem 2rem;
+  }
+  .texto-index p {
+    font-size: 1.3rem;
+  }
+  .card-title {
+    font-size: 1.7rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+  .div-dest {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-container {
+    justify-content: center;
+  }
+  .img-container img {
+    max-width: 90%;
+  }
+  .dest-textos {
+    align-items: center;
+    text-align: center;
+  }
+  .div-dest a {
+    align-self: center;
+  }
+  /* --------------------------nosotros */
+    .banner-nos {
+    height: 60vh;
+  }
+  .div-ban-nos p {
+    font-size: 1.5rem;
+  }
+  .div-ban-nos h1 {
+    font-size: 3rem;
+  }
+  .subtitulos-index {
+    font-size: 3rem;
+  }
+  .texto {
+    font-size: 1.6rem;
+  }
+  .ubicacion-container p {
+    font-size: 1.6rem;
+  }
+  iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
 
 
