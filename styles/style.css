@@ -20,39 +20,39 @@
 
 /* reset */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* para que 1rem sea 10px */
 html{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body{
-    font-family:"Josefin Sans", sans-serif ;
-    background-color:#e0e1dd;
+  font-family:"Josefin Sans", sans-serif ;
+  background-color:#e0e1dd;
 }
 
 
 /* header */
 
 header{
-    background-color: #2a9d8f;
-    border-bottom: 1px solid #264653;
+  background-color: #2a9d8f;
+  border-bottom: 1px solid #264653;
 }
 
 .logo{
-    width:16vh;
-    /* padding-top:4px; */
+  width:16vh;
+  /* padding-top:4px; */
 }
 .lista-navegacion{
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 .nav-link{
-    color:#edf2f4 ;
-    font-size: 2.5rem;
+  color:#edf2f4 ;
+  font-size: 2.5rem;
 }
 
 
