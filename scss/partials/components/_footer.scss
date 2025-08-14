@@ -1,0 +1,42 @@
+@use "../utilities/variables" as v;
+
+footer{
+    background-color: v.$color-dark;
+    color: v.$text-ligh;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: auto;
+    .sec-footer{
+        h2{
+            margin-bottom: 1rem;
+            font-size: v.$subtitulos-size;
+            
+            
+        }
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 2rem;
+                    object-fit: contain;
+                    filter: invert(35%) sepia(10%) saturate(200%) hue-rotate(180deg);
+
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+           
+        }
+    }
+
+}

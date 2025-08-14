@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  color: #0a0908;
+}
+
 a {
   text-decoration: none;
 }
@@ -15,6 +19,198 @@ li {
 
 body {
   font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  background-color: #2a9d8f;
+  border-bottom: 1px solid #264653;
+}
+header .logo {
+  width: 16vh;
+}
+header .lista-navegacion {
+  display: flex;
+  justify-content: flex-end;
+}
+header .lista-navegacion .nav-link {
+  color: #edf2f4;
+  font-size: 1.5rem;
+}
+
+.sec-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #edf2f4;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sec-banner {
+  background-image: url("../assets/bannerindex.png"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: multiply;
+}
+.sec-banner .div-banner h1 {
+  font-size: 2.5rem;
+  color: #edf2f4;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+.sec-banner .div-banner p {
+  font-size: 1.5rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.texto-index {
+  background-color: #264653;
+  color: #edf2f4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  margin: 0 3rem 1.5rem 3rem;
+  border: 1px solid #1b4332;
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.sec-banner {
+  background-image: url("../assets/banner-nos.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: multiply;
+}
+.sec-banner .div-banner h1 {
+  font-size: 2.5rem;
+  color: #edf2f4;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+.sec-banner .div-banner p {
+  font-size: 1.5rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.sec-banner {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+.sec-banner video {
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec-banner .banner-content {
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 1;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+.sec-banner .banner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.sec-banner .banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.sec-banner .banner-content a {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.4s ease;
+}
+.sec-banner .banner-content a:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 768px) {
+  .sec-banner {
+    height: 70vh;
+  }
+  .sec-banner .banner-content p {
+    font-size: 1.2rem;
+  }
+  .sec-banner .banner-content h1 {
+    font-size: 2.2rem;
+  }
+  .sec-banner .banner-content a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .sec-banner {
+    height: 60vh;
+  }
+  .sec-banner .banner-content p {
+    font-size: 1rem;
+  }
+  .sec-banner .banner-content h1 {
+    font-size: 1.8rem;
+  }
+  .sec-banner .banner-content a {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+}
+footer {
+  background-color: #264653;
+  color: #edf2f4;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+footer .sec-footer h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+footer .sec-footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+footer .sec-footer div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .sec-footer div a img {
+  width: 2rem;
+  object-fit: contain;
+  filter: invert(35%) sepia(10%) saturate(200%) hue-rotate(180deg);
+}
+footer .sec-footer div a img:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

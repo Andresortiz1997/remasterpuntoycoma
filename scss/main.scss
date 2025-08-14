@@ -2,5 +2,17 @@
 @use "./partials/base/general";
 @use "./partials/base/tipografia";
 
+
+// COMPONENTS
+@use "./partials/components/header";
+@use "./partials/components/inicio";
+@use "./partials/components/nostros";
+@use "./partials/components/menu";
+@use "./partials/components/recuerdos";
+@use "./partials/components/reservaciones";
+@use "./partials/components/footer";
+
+
 // UTILITIES
-@use "./partials/utilities/variables"
+@use "./partials/utilities/variables";
+@use "./partials/utilities/extend";

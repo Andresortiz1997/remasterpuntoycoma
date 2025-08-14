@@ -1,0 +1,14 @@
+@use "./variables" as v;
+
+
+%banner-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: v.$text-ligh ;
+  height:60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

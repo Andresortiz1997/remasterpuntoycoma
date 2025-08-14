@@ -1,0 +1,23 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+@use "../utilities/extend";
+
+.sec-banner{
+    @extend %banner-base;
+    background-image: url("../assets/banner-nos.jpg"), linear-gradient(v.$banner-overlay, v.$banner-overlay);
+    background-blend-mode: multiply;
+
+    .div-banner{
+        h1{
+            font-size: v.$titulos-size;
+            color:v.$text-ligh;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+            font-weight: bold;
+        }
+        p{
+            font-size: v.$textos-size;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+        }
+    }
+
+}
