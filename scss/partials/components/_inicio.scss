@@ -4,7 +4,7 @@
 
 .sec-banner{
     @extend %banner-base;
-    background-image: url("../assets/bannerindex.png"), linear-gradient(v.$banner-overlay, v.$banner-overlay);
+    background-color: url("../assets/baner.nos.jpg"), linear-gradient(v.$banner-overlay, v.$banner-overlay);
     background-blend-mode: multiply;
 
     .div-banner{
@@ -31,4 +31,76 @@
     border: 1px solid v.$efect-color;
     border-radius: .4rem;
     text-align: center;
+    font-size: v.$textos-size;
+}
+
+.sect-card{
+    @include m.flex(row, center, center);
+    flex-wrap: wrap;
+    gap: 1.1rem;
+    .div-card{
+        @extend %card-base;
+    }
+}
+
+.sec-dest{
+    margin: 1rem auto 1.5rem;
+    padding: 0 1rem;
+    max-width: 1200px;
+
+    .div-dest{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+        border: 1px ridge v.$efect-color;
+        border-radius: 10px;
+        background-color: v.$color-dark;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, .08);
+
+        h2{
+            grid-column: 1/-1;
+            justify-self: center;
+            text-align: center;
+            margin: 0 0 .75rem 0;
+            color: v.$text-ligh;
+            font-size: v.$subtitulos-size;
+            line-height: 1.2;
+        }
+
+        .dest-col-text{
+            grid-column: 1/2;
+            @include m.flex(column, center, auto);
+            gap: 1rem;
+
+            p{
+                color: v.$color-ligth;
+                text-align: justify;
+                line-height: 1.65;
+                font-size: 1.1rem;
+            }
+
+            a{
+                @extend %boton-base;
+            
+            }
+        }
+
+        .img-container{
+            display: grid;
+            grid-column: 2/3;
+            place-items: center;
+
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+            }
+
+        }
+    }
+
 }

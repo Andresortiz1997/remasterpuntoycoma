@@ -1,0 +1,77 @@
+@use "../utilities/extend";
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+
+section {
+  width: min(1200px, 100% - 2rem);
+  margin: 2rem auto;
+}
+
+.div-op {
+  display: grid;
+  place-items: center;
+  background-color: v.$color-dark;
+  padding: 1rem;
+  border-radius: .5rem;
+  text-align: center;
+  gap: 1rem;
+
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.div-op-tw {
+  background-color: #fff4cc;
+  padding: 1rem;
+  border-radius: .5rem;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.div-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0f7f9;
+  border-radius: .5rem;
+  padding: 1rem;
+  gap: 1rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: .25rem;
+  }
+
+  button {
+    background-color: #007b83;
+    color: white;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+  }
+}
