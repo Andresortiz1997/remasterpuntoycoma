@@ -24,7 +24,8 @@
     justify-items: center;
     
     a {
-      @extend %boton-base !optional; justify-self: center; 
+      @extend %boton-base !optional; 
+      justify-self: center; 
     }
   }
 }
