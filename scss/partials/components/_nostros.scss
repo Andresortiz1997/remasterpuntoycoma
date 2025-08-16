@@ -2,10 +2,9 @@
 @use "../utilities/mixins" as m;
 @use "../utilities/extend";
 
-.sec-banner{
+.sec-banner-nos{
     @extend %banner-base;
-    background-image: url("../assets/banner-nos.jpg"), linear-gradient(v.$banner-overlay, v.$banner-overlay);
-    background-blend-mode: multiply;
+    background-image: url("../assets/banner-nos.jpg");
 
     .div-banner{
         h1{

@@ -2,38 +2,26 @@
 @use "../utilities/mixins" as m;
 @use "../utilities/extend";
 
-// .sec-banner-menu{
-//   @extend %banner-base;
-//   position: relative;
-//   overflow: hidden;
-
-
-// }
-
-.sec-banner {
+.sec-banner-menu {
   display: grid;
-  grid-template-areas:
-    "media"
-    "content";
-  align-items: center;
-  justify-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-
+  place-items: center;
+  min-width: 60vh;
+  width: 100%;
+  overflow: hidden;
   video {
-    grid-area: media;
+    grid-area: 1/1;
     width: 100%;
-    max-height: 60vh;
+    height: 100%;
     object-fit: cover;
-    border-radius: 1rem;
     display: block;
   }
   .div-banenr {
-    grid-area: content;
-    margin-top: -40%;
     display: grid;
-    gap: .5rem;
+    grid-area: 1/1;
     text-align: center;
+    color: v.$text-ligh;
+    padding: 2rem;
+    justify-items: center;
     
     a {
       @extend %boton-base !optional; justify-self: center; 

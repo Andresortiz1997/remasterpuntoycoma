@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e0e1dd;
+}
+
 h1 {
   color: #0a0908;
 }
@@ -37,16 +41,19 @@ header .lista-navegacion .nav-link {
   font-size: 1.5rem;
 }
 
-.sec-banner {
+.sec-banner-nos, .sec-banner-index {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   text-align: center;
   color: #edf2f4;
-  height: 50vh;
+  height: 60vh;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 .sect-card .div-card {
@@ -89,7 +96,7 @@ header .lista-navegacion .nav-link {
   text-align: center;
 }
 
-.sec-banner .div-banenr a, .sec-dest .div-dest .dest-col-text a {
+.sec-banner-menu .div-banenr a, .sec-dest .div-dest .dest-col-text a {
   display: inline-block;
   align-self: center;
   padding: 0.8rem 1.5rem;
@@ -100,7 +107,7 @@ header .lista-navegacion .nav-link {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
-.sec-banner .div-banenr a:hover, .sec-dest .div-dest .dest-col-text a:hover {
+.sec-banner-menu .div-banenr a:hover, .sec-dest .div-dest .dest-col-text a:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 1px rgba(0, 0, 0, 0.18);
   background-color: rgb(36.6180904523, 136.8819095477, 124.675879397);
@@ -113,17 +120,16 @@ header .lista-navegacion .nav-link {
   color: #0a0908;
 }
 
-.sec-banner {
-  background-color: url("../assets/baner.nos.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-blend-mode: multiply;
+.sec-banner-index {
+  background-image: url("../assets/bannerindex.png");
 }
-.sec-banner .div-banner h1 {
+.sec-banner-index .div-banner h1 {
   font-size: 2.5rem;
   color: #edf2f4;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
   font-weight: bold;
 }
-.sec-banner .div-banner p {
+.sec-banner-index .div-banner p {
   font-size: 1.5rem;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
 }
@@ -203,17 +209,16 @@ header .lista-navegacion .nav-link {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-.sec-banner {
-  background-image: url("../assets/banner-nos.jpg"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-blend-mode: multiply;
+.sec-banner-nos {
+  background-image: url("../assets/banner-nos.jpg");
 }
-.sec-banner .div-banner h1 {
+.sec-banner-nos .div-banner h1 {
   font-size: 2.5rem;
   color: #edf2f4;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
   font-weight: bold;
 }
-.sec-banner .div-banner p {
+.sec-banner-nos .div-banner p {
   font-size: 1.5rem;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
 }
@@ -292,30 +297,29 @@ header .lista-navegacion .nav-link {
   border-radius: 8px;
 }
 
-.sec-banner {
+.sec-banner-menu {
   display: grid;
-  grid-template-areas: "media" "content";
-  align-items: center;
-  justify-items: center;
-  gap: 1rem;
-  padding: 1.5rem;
-}
-.sec-banner video {
-  grid-area: media;
+  place-items: center;
+  min-width: 60vh;
   width: 100%;
-  max-height: 60vh;
+  overflow: hidden;
+}
+.sec-banner-menu video {
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
   display: block;
 }
-.sec-banner .div-banenr {
-  grid-area: content;
-  margin-top: -40%;
+.sec-banner-menu .div-banenr {
   display: grid;
-  gap: 0.5rem;
+  grid-area: 1/1;
   text-align: center;
+  color: #edf2f4;
+  padding: 2rem;
+  justify-items: center;
 }
-.sec-banner .div-banenr a {
+.sec-banner-menu .div-banenr a {
   justify-self: center;
 }
 
