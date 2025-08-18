@@ -1,15 +1,17 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
 
 footer{
     background-color: v.$color-dark;
     color: v.$text-ligh;
     padding: 1.5rem 1rem;
     text-align: center;
-    margin-top: auto;
+    margin-top: .5rem;
     .sec-footer{
         h2{
             margin-bottom: 1rem;
             font-size: v.$subtitulos-size;
+            font-weight: bold;
             
             
         }
@@ -22,7 +24,7 @@ footer{
 
             a{
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
 
                 img{

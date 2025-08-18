@@ -41,7 +41,7 @@ header .lista-navegacion .nav-link {
   font-size: 1.5rem;
 }
 
-.sec-banner-nos, .sec-banner-index {
+.sec-banner-menu, .sec-banner-nos, .sec-banner-index {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,7 +96,7 @@ header .lista-navegacion .nav-link {
   text-align: center;
 }
 
-.sec-banner-menu .div-banenr a, .sec-dest .div-dest .dest-col-text a {
+.sec-banner-menu .div-banner a, .sec-dest .div-dest .dest-col-text a {
   display: inline-block;
   align-self: center;
   padding: 0.8rem 1.5rem;
@@ -107,31 +107,43 @@ header .lista-navegacion .nav-link {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
-.sec-banner-menu .div-banenr a:hover, .sec-dest .div-dest .dest-col-text a:hover {
+.sec-banner-menu .div-banner a:hover, .sec-dest .div-dest .dest-col-text a:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 1px rgba(0, 0, 0, 0.18);
   background-color: rgb(36.6180904523, 136.8819095477, 124.675879397);
 }
 
-.quienes-somos .subtitulos, .donde-estamos .subtitulos {
+.donde-estamos .subtitulos {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   color: #0a0908;
 }
 
+.carta .art-pastas, .carta .art-carne, .carta .art-veg, .carta .art-byc, .carta .art-postres, .carta .art-cafes {
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  min-height: 320px;
+  color: #edf2f4;
+  display: grid;
+  gap: 0.5rem;
+  block-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
 .sec-banner-index {
-  background-image: url("../assets/bannerindex.png");
+  background-image: url("../assets/bannerindex.jpg");
 }
 .sec-banner-index .div-banner h1 {
   font-size: 2.5rem;
   color: #edf2f4;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 4px 4px 6px rgb(0, 0, 0);
   font-weight: bold;
 }
 .sec-banner-index .div-banner p {
   font-size: 1.5rem;
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 3px 6px rgb(0, 0, 0);
 }
 
 .texto-index {
@@ -141,21 +153,21 @@ header .lista-navegacion .nav-link {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
-  margin: 0 3rem 1.5rem 3rem;
+  padding: 4rem 6rem;
   border: 1px solid #1b4332;
   border-radius: 0.4rem;
   text-align: center;
   font-size: 1.5rem;
+  margin: 0 auto 1.5rem auto;
 }
 
 .sect-card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1.1rem;
+  width: 100%;
 }
 .sec-dest {
   margin: 1rem auto 1.5rem;
@@ -167,7 +179,7 @@ header .lista-navegacion .nav-link {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 1.5rem;
-  padding: 1rem;
+  padding: 2rem 4rem;
   border: 1px ridge #1b4332;
   border-radius: 10px;
   background-color: #264653;
@@ -194,7 +206,7 @@ header .lista-navegacion .nav-link {
   color: #e0e1dd;
   text-align: justify;
   line-height: 1.65;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .sec-dest .div-dest .img-container {
   display: grid;
@@ -210,7 +222,7 @@ header .lista-navegacion .nav-link {
 }
 
 .sec-banner-nos {
-  background-image: url("../assets/banner-nos.jpg");
+  background-image: url("../assets/banner-nos.webp");
 }
 .sec-banner-nos .div-banner h1 {
   font-size: 2.5rem;
@@ -223,50 +235,34 @@ header .lista-navegacion .nav-link {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
 }
 
-.quienes-somos {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-.quienes-somos .subtitulos {
+.quienes-bloque .bloque-grid {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
-.quienes-somos .quienes-bloque {
-  margin-top: 2rem;
+.quienes-bloque.reverse {
+  flex-direction: row-reverse;
 }
-.quienes-somos .quienes-bloque .bloque-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-}
-.quienes-somos .quienes-bloque .bloque-grid .texto p {
-  text-align: justify;
-  line-height: 1.6;
-  font-size: 1.5rem;
+.quienes-bloque .texto, .quienes-bloque figure {
+  flex: 1 1 50%;
+  min-width: 0;
   margin: 0;
 }
-.quienes-somos .quienes-bloque .bloque-grid .imagen img {
+.quienes-bloque figure img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   display: block;
 }
-.quienes-somos .quienes-bloque .reverse {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
-}
-.quienes-somos .quienes-bloque .reverse .texto {
-  grid-column: 2;
-  align-self: center;
-}
-.quienes-somos .quienes-bloque .reverse .imagen {
-  grid-column: 1;
-  align-self: center;
+
+.span-full {
+  grid-column: 1/-1;
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 .donde-estamos {
@@ -298,31 +294,24 @@ header .lista-navegacion .nav-link {
 }
 
 .sec-banner-menu {
-  display: grid;
-  place-items: center;
-  min-width: 60vh;
-  width: 100%;
-  overflow: hidden;
+  background-image: url("../assets/banner-nos.webp");
 }
-.sec-banner-menu video {
-  grid-area: 1/1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.sec-banner-menu .div-banenr {
+.sec-banner-menu .div-banner {
   display: grid;
-  grid-area: 1/1;
-  text-align: center;
-  color: #edf2f4;
-  padding: 2rem;
+  gap: 0.75rem;
   justify-items: center;
+  text-align: center;
 }
-.sec-banner-menu .div-banenr a {
-  justify-self: center;
+.sec-banner-menu .div-banner h1 {
+  font-size: 2.5rem;
+  color: #edf2f4;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
 }
-
+.sec-banner-menu .div-banner p {
+  font-size: 1.5rem;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+}
 .carta-nav ul {
   display: flex;
   gap: 0.75rem;
@@ -341,23 +330,28 @@ header .lista-navegacion .nav-link {
   transform: translateY(-2px);
 }
 
-.menu-panel {
-  padding: 1.25rem;
+.carta {
+  background-color: #e0e1dd;
+  padding: 1rem;
   border-radius: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: #edf2f4;
 }
-
-.menu-panel--entradas {
-  background-image: url("../assets/entradas.jpg");
+.carta .art-pastas {
+  background-image: url("../assets/pastas.webp");
 }
-.menu-panel--principales {
-  background-image: url("../assets/principales.jpg");
+.carta .art-carne {
+  background-image: url("../assets/carnes.webp");
 }
-.menu-panel--postres {
-  background-image: url("../assets/postres.jpg");
+.carta .art-veg {
+  background-image: url("../assets/vegetales.webp");
+}
+.carta .art-byc {
+  background-image: url("../assets/cocteles.webp");
+}
+.carta .art-postres {
+  background-image: url("../assets/postres.webp");
+}
+.carta .art-cafes {
+  background-image: url("../assets/cafe.webp");
 }
 
 section {
@@ -433,11 +427,12 @@ footer {
   color: #edf2f4;
   padding: 1.5rem 1rem;
   text-align: center;
-  margin-top: auto;
+  margin-top: 0.5rem;
 }
 footer .sec-footer h2 {
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 footer .sec-footer div {
   display: flex;
@@ -447,7 +442,7 @@ footer .sec-footer div {
 }
 footer .sec-footer div a {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 footer .sec-footer div a img {

@@ -80,3 +80,15 @@
   font-size:v.$subtitulos-size;
   color:v.$text-dark;
 }
+
+%carta-base{
+  border-radius: .75rem;
+  padding: 1.5rem;
+  min-height: 320px;
+  color: v.$text-ligh;
+  display: grid;
+  gap: .5rem;
+  block-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .10);
+}

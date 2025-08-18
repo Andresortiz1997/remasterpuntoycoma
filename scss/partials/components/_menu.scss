@@ -2,32 +2,30 @@
 @use "../utilities/mixins" as m;
 @use "../utilities/extend";
 
-.sec-banner-menu {
-  display: grid;
-  place-items: center;
-  min-width: 60vh;
-  width: 100%;
-  overflow: hidden;
-  video {
-    grid-area: 1/1;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-  .div-banenr {
+.sec-banner-menu{
+  @extend %banner-base;
+  background-image: url("../assets/banner-nos.webp");
+
+  .div-banner{
     display: grid;
-    grid-area: 1/1;
-    text-align: center;
-    color: v.$text-ligh;
-    padding: 2rem;
+    gap: 0.75rem;
     justify-items: center;
-    
-    a {
-      @extend %boton-base !optional; 
-      justify-self: center; 
+    text-align: center;
+    h1{
+      font-size: v.$titulos-size;
+      color:v.$text-ligh;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+      font-weight: bold;
+    }
+    p{
+      font-size: v.$textos-size;
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+    }
+    a{
+      @extend %boton-base;
     }
   }
+
 }
 
 .carta-nav ul {
@@ -47,20 +45,36 @@
   }
 }
 
-%menu-panel {
-  padding: 1.25rem;
+.carta{
+  background-color: v.$color-ligth;
+  padding: 1rem;
   border-radius: 1rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color:v.$text-ligh;
-}
 
-.menu-panel {
-  @extend %menu-panel;
-  &--entradas { background-image: url("../assets/entradas.jpg"); }
-  &--principales { background-image: url("../assets/principales.jpg"); }
-  &--postres { background-image: url("../assets/postres.jpg"); }
+  .art-pastas{
+    @extend %carta-base;
+    background-image: url("../assets/pastas.webp");    
+
+  }
+  .art-carne{
+    @extend %carta-base;
+    background-image: url("../assets/carnes.webp");
+  }
+  .art-veg{
+    @extend %carta-base;
+    background-image: url("../assets/vegetales.webp");
+  }
+  .art-byc{
+    @extend %carta-base;
+    background-image: url("../assets/cocteles.webp");
+  }
+  .art-postres{
+    @extend %carta-base;
+    background-image: url("../assets/postres.webp");
+  }
+  .art-cafes{
+    @extend %carta-base;
+    background-image: url("../assets/cafe.webp");
+  }
 }
 
 

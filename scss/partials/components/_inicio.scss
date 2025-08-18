@@ -4,17 +4,17 @@
 
 .sec-banner-index{
     @extend %banner-base;
-    background-image: url("../assets/bannerindex.png");
+    background-image: url("../assets/bannerindex.jpg");
     .div-banner{
         h1{
             font-size: v.$titulos-size;
             color:v.$text-ligh;
-            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
             font-weight: bold;
         }
         p{
             font-size: v.$textos-size;
-            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 1);
         }
     }
 
@@ -24,18 +24,19 @@
     background-color: v.$color-dark;
     color: v.$text-ligh;
     @include m.flex(row, center, center);
-    padding: 4rem;
-    margin: 0 3rem 1.5rem 3rem;
+    padding: 4rem 6rem;
     border: 1px solid v.$efect-color;
     border-radius: .4rem;
     text-align: center;
     font-size: v.$textos-size;
+    margin: 0 auto 1.5rem auto; 
 }
 
 .sect-card{
-    @include m.flex(row, center, center);
+    @include m.flex(row, space-around, center);
     flex-wrap: wrap;
-    gap: 1.1rem;
+    // gap: 1.1rem;
+    width: 100%;
     .div-card{
         @extend %card-base;
     }
@@ -51,7 +52,7 @@
         grid-template-columns:1fr 1fr;
         grid-template-rows: auto 1fr;
         gap: 1.5rem;
-        padding: 1rem;
+        padding: 2rem 4rem;
         border: 1px ridge v.$efect-color;
         border-radius: 10px;
         background-color: v.$color-dark;
@@ -76,7 +77,7 @@
                 color: v.$color-ligth;
                 text-align: justify;
                 line-height: 1.65;
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             a{
