@@ -3,75 +3,71 @@
 @use "../utilities/variables" as v;
 
 
-section {
-  width: min(1200px, 100% - 2rem);
-  margin: 2rem auto;
-}
-
-.div-op {
-  display: grid;
-  place-items: center;
-  background-color: v.$color-dark;
-  padding: 1rem;
-  border-radius: .5rem;
-  text-align: center;
+.op-hero {
+  display: flex;
+  align-items: stretch;
   gap: 1rem;
+  margin: 1rem 0;
 
-  p {
-    margin: 0;
-    font-size: 1rem;
+  .div-op,
+  .div-op-tw {
+    flex: 1 1 50%;
+    padding: 1.5rem;
+    border-radius: .75rem;
+    display: grid;
+    place-content: center;
+    text-align: center;
   }
 
-  h1 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 }
 
-.div-op-tw {
-  background-color: #fff4cc;
+.carta {
   padding: 1rem;
-  border-radius: .5rem;
-  line-height: 1.6;
+  border-radius: 1rem;
+  margin: 1rem 0;
+
+  article {
+    border-radius: .75rem;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,.10);
+  }
 }
 
-h2 {
-  text-align: center;
-  margin: 2rem 0 1rem 0;
+.carta--tazas article { 
+  background-image: url("../assets/bg-tazas.jpg"); 
 }
-
-article {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+.carta--remeras article {
+  background-image: url("../assets/bg-remeras.jpg");
+}
+.carta--gorras article {
+  background-image: url("../assets/bg-gorras.jpg");
 }
 
 .div-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #e0f7f9;
+  @extend %card-base;
+  display: grid;
+  gap: .75rem;
   border-radius: .5rem;
-  padding: 1rem;
-  gap: 1rem;
+  overflow: hidden;
 
   img {
     width: 100%;
-    height: auto;
-    border-radius: .25rem;
+    height: 220px;
+    object-fit: cover;
+    display: block;
   }
 
-  button {
-    background-color: #007b83;
-    color: white;
-    border: none;
-    padding: .5rem 1rem;
-    border-radius: .25rem;
-    cursor: pointer;
+  a {
+    @extend %boton-base;
+    text-align: center;
+    display: inline-block;
   }
+}
+
+section > article {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }

@@ -28,23 +28,27 @@
 
 }
 
-.carta-nav ul {
-  display: flex;
-  gap: .75rem;
-  justify-content: center;
+.carta-nav{
+  background-color: v.$color-dark;
+  color: v.$text-ligh;
+  margin: .6rem;
   padding: 1rem;
-  background: v.$color-dark;
-}
-.carta-nav .li-nav a {
-  color:v.$text-ligh;
-  padding: .5rem .75rem;
   border-radius: .5rem;
-  transition: transform .15s ease;
-  &:hover{ 
-    transform: translateY(-2px); 
+
+  ul{
+    @include m.flex(row, center, center);
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+
+    li{
+      a{
+        font-size: 1.12rem;
+        
+      }
+    }
   }
 }
-
 .carta{
   background-color: v.$color-ligth;
   padding: 1rem;

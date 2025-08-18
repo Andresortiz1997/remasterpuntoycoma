@@ -86,9 +86,14 @@
   padding: 1.5rem;
   min-height: 320px;
   color: v.$text-ligh;
+  text-align: center;
   display: grid;
   gap: .5rem;
   block-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 6px 18px rgba(0, 0, 0, .10);
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: multiply; 
 }
+
