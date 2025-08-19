@@ -1,44 +1,30 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
+@use "../utilities/extend";
 
 footer{
     background-color: v.$color-dark;
     color: v.$text-ligh;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    margin-top: .5rem;
-    .sec-footer{
-        h2{
-            margin-bottom: 1rem;
-            font-size: v.$subtitulos-size;
-            font-weight: bold;
-            
-            
-        }
+    @include m.flex(column, center, center);
 
-        div{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 5rem;
+    h2{
+        @extend %title-center;
+        color: v.$text-ligh;
+        margin-top: 1rem;
+    }
 
-            a{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+    div{
+        a{
+            padding: 0 8rem;
 
-                img{
-                    width: 2rem;
-                    object-fit: contain;
-                    filter: invert(35%) sepia(10%) saturate(200%) hue-rotate(180deg);
-
-                    &:hover{
-                        transform: scale(1.1);
-                    }
-                }
+            img{
+                width: 60px;
             }
-           
         }
     }
 
+    p{
+        text-align: center;
+        margin-top: 2rem;
+    }
 }

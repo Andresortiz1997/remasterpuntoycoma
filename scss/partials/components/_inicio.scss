@@ -29,9 +29,14 @@
     border-radius: .4rem;
     text-align: center;
     font-size: v.$textos-size;
-    margin: 0 auto 1.5rem auto; 
+    margin: .5rem 3rem; 
 }
 
+h2{
+    @extend %title-center;
+    font-weight: bold;
+    margin: 1rem 0;
+}
 .sect-card{
     @include m.flex(row, space-around, center);
     flex-wrap: wrap;
@@ -43,7 +48,7 @@
 }
 
 .sec-dest{
-    margin: 1rem auto 1.5rem;
+    margin: 2rem auto 2rem;
     padding: 0 1rem;
     max-width: 1200px;
 
